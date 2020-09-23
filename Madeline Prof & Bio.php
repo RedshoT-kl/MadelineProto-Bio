@@ -17,7 +17,7 @@ $MadelineProto->loop(function () use ($MadelineProto) {
 $time = date("H:i");
         try {
 yield $MadelineProto->account->updateProfile(['about' => " RedshoT $time"]); //Bio
-yield $MadelineProto->account->updateProfile(['second_name' => " @RedshoT_Kl $time"]); //Profile
+yield $MadelineProto->account->updateProfile(['last_name' => " @RedshoT_Kl $time"]); //Profile
 
 } catch (\danog\MadelineProto\RPCErrorException $e) {} catch (\danog\MadelineProto\Exception $e2) {}
     });
